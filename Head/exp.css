@@ -133,4 +133,8 @@ nav a.active{
         max-width: 90%;
         text-align: center;
     }
+
+    nav a{
+        display:none;
+    }
 }

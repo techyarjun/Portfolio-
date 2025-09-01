@@ -139,4 +139,8 @@ nav a.active {
   .edu-card {
     max-width: 100%;
   }
+
+  nav a{
+       display:none;
+  }
 }

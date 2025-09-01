@@ -137,4 +137,8 @@ nav a.active{
         grid-template-columns: 1fr;
         padding: 6rem 2%;
     }
+
+    nav a{
+        display:none;
+    }
 }
