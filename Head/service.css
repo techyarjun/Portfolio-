@@ -1,0 +1,88 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #0d0d0d;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 100;
+}
+
+header .logo {
+  color: #f39c12;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #f39c12;
+}
+
+/* Services Section */
+.services {
+  padding: 120px 50px 50px; /* top padding adjusted for fixed header */
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #f39c12;
+}
+
+/* Service Boxes */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.service-box {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  background: #222;
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f39c12;
+}
+
+.service-box p {
+  font-size: 15px;
+  color: #ccc;
+}

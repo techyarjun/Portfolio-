@@ -1,0 +1,142 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== Header (Fixed) ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #b74b4b;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #b74b4b;
+  border-bottom: 3px solid #b74b4b;
+}
+
+/* ===== Education Section ===== */
+.education {
+  padding: 12rem 5% 5rem; /* extra top padding (header space) */
+  text-align: center;
+}
+
+.education h1 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  color: #b74b4b;
+  font-weight: 700;
+}
+
+/* Education Cards Container */
+.edu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* Each Education Card */
+.edu-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: #1e1e1e;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease-in-out;
+  text-align: left;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+}
+
+.edu-card h2 {
+  font-size: 2.4rem;
+  color: #ff6b81;
+  margin-bottom: 1.2rem;
+}
+
+.edu-card p {
+  font-size: 1.6rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .education h1 {
+    font-size: 4rem;
+  }
+
+  .edu-cards {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav a {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .education h1 {
+    font-size: 3.2rem;
+  }
+
+  .edu-card {
+    max-width: 100%;
+  }
+}

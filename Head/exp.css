@@ -1,0 +1,136 @@
+/* exp.css */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+.home-content{
+    padding-top: 100px;
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* General reset and fonts already handled in your main CSS */
+.experience {
+    min-height: 100vh;
+    padding: 8rem 9%;
+    background-color: #121212; /* same as body */
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.experience h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #b74b4b; /* accent color */
+    font-weight: 700;
+}
+
+/* Container for cards */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; /* spacing between cards */
+}
+
+/* Individual experience card */
+.experience-card {
+    background-color: #1f1f1f; /* matches header bg */
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(183, 75, 75, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(183, 75, 75, 0.7);
+}
+
+.experience-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #b74b4b;
+    font-weight: 600;
+}
+
+.experience-card p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card {
+        max-width: 90%;
+        text-align: center;
+    }
+}
