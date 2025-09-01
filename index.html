@@ -21,6 +21,17 @@
             <a href="/contact" id="contact">Contact</a>
         </nav>
     </header>
+    <header class="mobile">
+    <a href="#" class="logo">WolF</a>
+    <i class="fas fa-bars" id="menu-icon"></i>
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
     <section class="home">
         <div class="home-img">
             <img src="main.jpg" alt="">
@@ -43,5 +54,14 @@
     <p>I build responsive websites using HTML, CSS, and JavaScript.</p>
     </section>
     <link>
+     <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let nav = document.querySelector('nav');
+
+        menuIcon.onclick = () => {
+            nav.classList.toggle('active');
+        };
+    </script>
+
 </body>
 </html>
